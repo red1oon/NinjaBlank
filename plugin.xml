@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
-   <extension-point id="org.adempiere.install.IDatabaseConfig" name="Database configuration extension" schema="schema/org.adempiere.install.IDatabaseConfig.exsd"/>
-      <extension
-         id="org.red1.ninja2.ModuleMaker-application"
-         point="org.eclipse.core.runtime.applications">
-      <application
-            cardinality="singleton-global"
-            thread="main"
-            visible="true">
-         <run
-               class="org.red1.ninja2.ModuleMaker">
-         </run>
-      </application>
+   <!--
+   Add your extension points here. Examples:
+
+   For a Process:
+   <extension point="org.adempiere.base.Process" id="org.idempiere.blank.process">
+      <process id="MyProcess" class="org.idempiere.blank.process.MyProcess"/>
    </extension>
+
+   For a ModelFactory:
+   <extension point="org.adempiere.base.ModelFactory" id="org.idempiere.blank.model">
+      <modelfactory class="org.idempiere.blank.model.MyModelFactory"/>
+   </extension>
+
+   For a Callout:
+   <extension point="org.adempiere.base.Callout" id="org.idempiere.blank.callout">
+      <callout class="org.idempiere.blank.callout.MyCallout"/>
+   </extension>
+   -->
 </plugin>
